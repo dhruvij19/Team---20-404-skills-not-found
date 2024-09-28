@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>search in javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: #e6e0df;
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 80px 0px;
+    }
+
+    .container {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+    }
+
+    .container .search {
+        display: flex;
+        padding: 30px 0px;
+        justify-content: space-between;
+    }
+
+    .container .search h1 {
+        letter-spacing: 3px;
+        display: inline-block;
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+    }
+
+    .container .search input {
+        width: 60%;
+        padding: 5px 16px;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 20px;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        outline: none;
+    }
+
+    .container .search input::placeholder {
+        color: black;
+        font-weight: 500;
+    }
+
+    .container .product-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .container .product-list .product {
+        margin-top: 30px;
+    }
+
+    .container .product-list .product h3 {
+        padding-top: 5px;
+        letter-spacing: 2px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .container .product-list .product h4 {
+        padding: 3px 0px;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .product img {
+        width: 230px;
+        height: 250px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="search">
+                <h1>Find people nearby your location</h1>
+                <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <img src="img\photo-1500648767791-00dcc994a43e.avif">
+                    <h3>Borivali west</h3>
+                    <h4>Name: Ajay Tiwari <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1507003211169-0a1dd7228f2d.avif">
+                    <h3>Kandivali east</h3>
+                    <h4>Name: Ajay Tejani <br> Contact: 9867722645</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1622698222667-8dcb54a2b22e.avif">
+                    <h3>Malad west</h3>
+                    <h4>Name: Ravi Patel <br> Contact: 9802288675</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689539137236-b68e436248de.avif">
+                    <h3>Borivali east</h3>
+                    <h4>Name: Hardik Gabani <br> Contact: 9864499876</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689977968861-9c91dbb16049.avif">
+                    <h3>Andheri west</h3>
+                    <h4>Name: Arvind Tiwari <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1521252659862-eec69941b071.avif">
+                    <h3>Andheri east</h3>
+                    <h4>Name: Jinal Tiwari <br> Contact: 9802288675</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1690407617542-2f210cf20d7e.avif">
+                    <h3>Malad east</h3>
+                    <h4>Name: Payal Mehra <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img
+                        src="https://live.hasthemes.com/html/2/sabujcha-preview/sabujcha/assets/img/product/product-8.jpg">
+                    <h3>Kandivali west</h3>
+                    <h4>Name: Janvi Gupta <br> Contact: 9864499876</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1688350808212-4e6908a03925.avif">
+                    <h3>Borivali west</h3>
+                    <h4>Name: Arya Singh <br> Contact: 9876659342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1507003211169-0a1dd7228f2d.avif">
+                    <h3>Kandivali east</h3>
+                    <h4>Name: Aaryan Shah <br> Contact: 9876655341</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1622698222667-8dcb54a2b22e.avif">
+                    <h3>Malad west</h3>
+                    <h4>Name: Ajay Tiwari <br> Contact: 9876355342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1630883665215-dc90914c334b.avif">
+                    <h3>Goregaon east</h3>
+                    <h4>Name: Pranali Gupta <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1507003211169-0a1dd7228f2d.avif">
+                    <h3>Goregaon west</h3>
+                    <h4>Name: Ajay Tiwari <br> Contact: 9876555342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689539137236-b68e436248de.avif">
+                    <h3> Juhu jvpd</h3>
+                    <h4>Name: Ajay jain <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689977968861-9c91dbb16049.avif">
+                    <h3>Bandra east</h3>
+                    <h4>Name: Rahul shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689977871600-e755257fb5f8.avif">
+                    <h3>Kandivali west</h3>
+                    <h4>Name: Manish gabani <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1521252659862-eec69941b071.avif">
+                    <h3>Borivali west</h3>
+                    <h4>Name: Saloni sheth <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1690407617542-2f210cf20d7e.avif">
+                    <h3>Kandivali east</h3>
+                    <h4>Name: Aayushi Kalyani <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1688350808212-4e6908a03925.avif">
+                    <h3>Kandivali east</h3>
+                    <h4>Name: Riddhi Shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1500648767791-00dcc994a43e.avif">
+                    <h3>Goregaon west</h3>
+                    <h4>Name: Sidh Shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689539137236-b68e436248de.avif">
+                    <h3>Andheri west</h3>
+                    <h4>Name: Karan Gupta <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1507003211169-0a1dd7228f2d.avif">
+                    <h3>Andheri east</h3>
+                    <h4>Name: Ramesh Kakadiya <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1689977968861-9c91dbb16049.avif">
+                    <h3>Andheri west</h3>
+                    <h4>Name: Ajay Tiwari <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1688350808212-4e6908a03925.avif">
+                    <h3>Kandivali west</h3>
+                    <h4>Name: Vidhi Shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1521252659862-eec69941b071.avif">
+                    <h3>Borivali west</h3>
+                    <h4>Name: Shruti jain <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1630883665215-dc90914c334b.avif">
+                    <h3>Malad east</h3>
+                    <h4>Name: Malvika mehra <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1690407617542-2f210cf20d7e.avif">
+                    <h3>Bandra west</h3>
+                    <h4>Name: Khushi jain <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1622698222667-8dcb54a2b22e.avif">
+                    <h3>Borival west</h3>
+                    <h4>Name: Sachin Sharma <br> Contact: 9876656342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1690407617542-2f210cf20d7e.avif">
+                    <h3>Goregaon west</h3>
+                    <h4>Name: Shrey patel <br> Contact: 9876655348</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1500648767791-00dcc994a43e.avif">
+                    <h3> Juhu jvpd</h3>
+                    <h4>Name: Aman gupta <br> Contact: 9876655345</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1521252659862-eec69941b071.avif">
+                    <h3>Bandra east</h3>
+                    <h4>Name: Kia shah <br> Contact: 9876655341</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1690407617542-2f210cf20d7e.avif">
+                    <h3>Kandivali west</h3>
+                    <h4>Name: Jiya Mehta <br> Contact: 9876655344</h4>
+                </div>
+                <div class="product">
+                    <img src="img\premium_photo-1688350808212-4e6908a03925.avif">
+                    <h3>Kandivali east</h3>
+                    <h4>Name: Riddhi Shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1500648767791-00dcc994a43e.avif">
+                    <h3>Goregaon west</h3>
+                    <h4>Name: Sidh Shah <br> Contact: 9876655342</h4>
+                </div>
+                <div class="product">
+                    <img src="img\photo-1622698222667-8dcb54a2b22e.avif">
+                    <h3>Borival west</h3>
+                    <h4>Name: Sachin Sharma <br> Contact: 9876656342</h4>
+                </div>
+            </div>
+            <!-- javascript -->
+            <script type="text/javascript">
+                function search() {
+                    let filter = document.getElementById('find').value.toUpperCase();
+                    let item = document.querySelectorAll('.product');
+                    let l = document.getElementsByTagName('h3');
+                    for (var i = 0; i <= l.length; i++) {
+                        let a = item[i].getElementsByTagName('h3')[0];
+                        let value = a.innerHTML || a.innerText || a.textContent;
+                        if (value.toUpperCase().indexOf(filter) > -1) {
+                            item[i].style.display = "";
+                        }
+                        else {
+                            item[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            justify-content: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* Heading */
+        .heading h2 {
+            font-size: 28px;
+            font-weight: 500;
+            border-left: 8px solid #303054;
+            padding: 5px 15px;
+            margin-bottom: 15px;
+        }
+
+        .heading p {
+            font-size: 18px;
+        }
+
+        .heading p span {
+            font-weight: 600;
+            color: #303054;
+        }
+
+        /* Buttons */
+        .btn1 {
+            font-size: 1rem;
+            font-weight: 400;
+            background-color: #303054;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none !important;
+            transition: all 0.5s;
+        }
+
+        .btn1:hover {
+            background-color: #e6edff;
+            color: #303054;
+        }
+
+        /* Donation Section */
+        .don-sec {
+            background-color: #e6edff;
+            padding: 150px 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .don-sec .don-box {
+            margin: 50px 0;
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #b4afaf;
+            transition: all 1s;
+        }
+
+        .don-sec .don-box img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+        .don-sec .don-box h3 {
+            margin: 15px 0 10px;
+        }
+
+        .don-sec .don-box p {
+            margin-bottom: 25px;
+        }
+
+        .don-sec .don-box:hover img {
+            transform: scale(1.1);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <section class="don-sec" id="donation">
+        <div class="container">
+            <div class="heading">
+                <h2> Donation like..</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="don-box">
+                        <img src="img\photo-1536910467852-a6fded0c5c47.avif" alt="img">
+                        <h3>Food</h3>
+                        <p>"Helping paws in need - donate pet food today."</p>
+                        <a href="donate_payemnt.html" class="btn1">Donate Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="don-box">
+                        <img src="img\photo-1578894964869-a990203ab905.avif" alt="img">
+                        <h3>Medical care</h3>
+                        <p>"Healing begins with your generosity - donate to provide medical care."</p>
+                        <a href="donate_payemnt.html" class="btn1">Donate Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="don-box">
+                        <img src="img\photo-1596383924439-4d410af270f4.avif" alt="img">
+                        <h3>shelter</h3>
+                        <p>"Give more than a roof - donate to shelter those in need."</p>
+                        <a href="donate_payemnt.html" class="btn1">Donate Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="don-box">
+                        <img src="img\photo-1601758176481-e81a6b713126.avif" alt="img">
+                        <h3>Sponsor a feeding program</h3>
+                        <p>"Be a lifeline of hope - sponsor a feeding program and make a difference."</p>
+                        <a href="donate_payemnt.html" class="btn1">Donate Now</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

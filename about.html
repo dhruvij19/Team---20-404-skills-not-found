@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 2rem 9%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 4rem;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba(255, 51, 153, .05);
+    }
+
+    .heading span {
+        color: var(--pink);
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background: #333;
+        color: #fff;
+        padding: .9rem 3.5rem;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+
+    .btn:hover {
+        background: white;
+        border: 2px solid black;
+        color: black;
+    }
+
+
+    .about .row {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+    }
+
+    .about .row .video-container {
+        flex: 1 1 40rem;
+        position: relative;
+    }
+
+    .about .row .video-container video {
+        width: 100%;
+        border: 1.5rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .row .video-container h3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        background: #fff;
+        width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;
+        mix-blend-mode: screen;
+    }
+
+    .about .row .content {
+        flex: 1 1 40rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 3rem;
+        color: #333;
+    }
+
+    .about .row .content p {
+        font-size: 1.5rem;
+        color: #999;
+        padding: .5rem 0;
+        padding-top: 1rem;
+        line-height: 1.5;
+    }
+</style>
+
+<body>
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span> about </span> us </h1>
+
+        <div class="row">
+
+            <div class="video-container">
+                <video src="img\pexels-roman-odintsov-7437708-4096x1974-30fps.mp4" loop autoplay muted></video>
+                <h3>Support Pets</h3>
+            </div>
+
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>At our organization, we pride ourselves on being a beacon of hope for pets in need. Whether you're
+                    looking for a furry friend to adopt, seeking support for your beloved companion, or aiming to make a
+                    difference through donations, we're here for you every step of the way. Our adoption process is
+                    designed to match pets with loving families, ensuring that each adoption is a lifelong commitment
+                    filled with joy and companionship. </p>
+                <p>When you donate to us, you're not just giving money - you're
+                    giving hope to animals in need, providing them with the care and resources they deserve. Our
+                    shelters are havens of safety and compassion, where every pet is valued and cherished. </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+
+</body>
+
+</html>

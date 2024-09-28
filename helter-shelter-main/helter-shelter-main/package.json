@@ -1,0 +1,33 @@
+{
+  "name": "helter-shelter",
+  "version": "1.0.0",
+  "description": "Helter-Shelter is a site promoting animal shelters, rescue organizations and humane societies throughout the state of New Hampshire",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soundwanders/helter-shelter.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Leaflet.js",
+    "Animal",
+    "Shelter",
+    "New Hampshire",
+    "Pets",
+    "Web",
+    "Application",
+    "Web",
+    "Development"
+  ],
+  "author": "soundwanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soundwanders/helter-shelter/issues"
+  },
+  "homepage": "https://github.com/soundwanders/helter-shelter#readme"
+}
